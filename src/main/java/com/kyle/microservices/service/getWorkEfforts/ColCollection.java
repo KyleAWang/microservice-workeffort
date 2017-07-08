@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}map-TreeMap" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}map-Map" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}eepk-" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element ref="{http://ofbiz.apache.org/service/}eeval-" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://ofbiz.apache.org/service/}eeval-WorkEffort" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}std-BigDecimal" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/choice&gt;
  *     &lt;/restriction&gt;
@@ -81,7 +81,7 @@ import javax.xml.bind.annotation.XmlType;
     "mapTreeMap",
     "mapMap",
     "eepk",
-    "eeval",
+    "eevalWorkEffort",
     "stdBigDecimal"
 })
 public class ColCollection {
@@ -136,8 +136,8 @@ public class ColCollection {
     protected List<MapMap> mapMap;
     @XmlElement(name = "eepk-")
     protected List<MapMap> eepk;
-    @XmlElement(name = "eeval-")
-    protected List<MapMap> eeval;
+    @XmlElement(name = "eeval-WorkEffort")
+    protected List<EevalWorkEffort> eevalWorkEffort;
     @XmlElement(name = "std-BigDecimal")
     protected List<StdBigDecimal> stdBigDecimal;
 
@@ -867,32 +867,32 @@ public class ColCollection {
     }
 
     /**
-     * Gets the value of the eeval property.
+     * Gets the value of the eevalWorkEffort property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the eeval property.
+     * This is why there is not a <CODE>set</CODE> method for the eevalWorkEffort property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getEeval().add(newItem);
+     *    getEevalWorkEffort().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link MapMap }
+     * {@link EevalWorkEffort }
      * 
      * 
      */
-    public List<MapMap> getEeval() {
-        if (eeval == null) {
-            eeval = new ArrayList<MapMap>();
+    public List<EevalWorkEffort> getEevalWorkEffort() {
+        if (eevalWorkEffort == null) {
+            eevalWorkEffort = new ArrayList<EevalWorkEffort>();
         }
-        return this.eeval;
+        return this.eevalWorkEffort;
     }
 
     /**

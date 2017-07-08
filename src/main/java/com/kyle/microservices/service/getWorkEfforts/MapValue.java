@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}map-TreeMap"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}map-Map"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}eepk-"/&gt;
- *         &lt;element ref="{http://ofbiz.apache.org/service/}eeval-"/&gt;
+ *         &lt;element ref="{http://ofbiz.apache.org/service/}eeval-WorkEffort"/&gt;
  *         &lt;element ref="{http://ofbiz.apache.org/service/}std-BigDecimal"/&gt;
  *       &lt;/choice&gt;
  *     &lt;/restriction&gt;
@@ -79,7 +79,7 @@ import javax.xml.bind.annotation.XmlType;
     "mapTreeMap",
     "mapMap",
     "eepk",
-    "eeval",
+    "eevalWorkEffort",
     "stdBigDecimal"
 })
 public class MapValue {
@@ -134,8 +134,8 @@ public class MapValue {
     protected MapMap mapMap;
     @XmlElement(name = "eepk-")
     protected MapMap eepk;
-    @XmlElement(name = "eeval-")
-    protected MapMap eeval;
+    @XmlElement(name = "eeval-WorkEffort")
+    protected EevalWorkEffort eevalWorkEffort;
     @XmlElement(name = "std-BigDecimal")
     protected StdBigDecimal stdBigDecimal;
 
@@ -740,27 +740,27 @@ public class MapValue {
     }
 
     /**
-     * Gets the value of the eeval property.
+     * Gets the value of the eevalWorkEffort property.
      * 
      * @return
      *     possible object is
-     *     {@link MapMap }
+     *     {@link EevalWorkEffort }
      *     
      */
-    public MapMap getEeval() {
-        return eeval;
+    public EevalWorkEffort getEevalWorkEffort() {
+        return eevalWorkEffort;
     }
 
     /**
-     * Sets the value of the eeval property.
+     * Sets the value of the eevalWorkEffort property.
      * 
      * @param value
      *     allowed object is
-     *     {@link MapMap }
+     *     {@link EevalWorkEffort }
      *     
      */
-    public void setEeval(MapMap value) {
-        this.eeval = value;
+    public void setEevalWorkEffort(EevalWorkEffort value) {
+        this.eevalWorkEffort = value;
     }
 
     /**

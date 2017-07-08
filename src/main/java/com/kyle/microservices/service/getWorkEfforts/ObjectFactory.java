@@ -42,7 +42,6 @@ public class ObjectFactory {
     private final static QName _MapKey_QNAME = new QName("http://ofbiz.apache.org/service/", "map-Key");
     private final static QName _MapValue_QNAME = new QName("http://ofbiz.apache.org/service/", "map-Value");
     private final static QName _Eepk_QNAME = new QName("http://ofbiz.apache.org/service/", "eepk-");
-    private final static QName _Eeval_QNAME = new QName("http://ofbiz.apache.org/service/", "eeval-");
     private final static QName _CusObj_QNAME = new QName("http://ofbiz.apache.org/service/", "cus-obj");
 
     /**
@@ -186,6 +185,14 @@ public class ObjectFactory {
      */
     public MapValue createMapValue() {
         return new MapValue();
+    }
+
+    /**
+     * Create an instance of {@link EevalWorkEffort }
+     * 
+     */
+    public EevalWorkEffort createEevalWorkEffort() {
+        return new EevalWorkEffort();
     }
 
     /**
@@ -348,15 +355,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ofbiz.apache.org/service/", name = "eepk-")
     public JAXBElement<MapMap> createEepk(MapMap value) {
         return new JAXBElement<MapMap>(_Eepk_QNAME, MapMap.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link MapMap }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ofbiz.apache.org/service/", name = "eeval-")
-    public JAXBElement<MapMap> createEeval(MapMap value) {
-        return new JAXBElement<MapMap>(_Eeval_QNAME, MapMap.class, null, value);
     }
 
     /**
