@@ -14,7 +14,7 @@ import javax.xml.ws.Service;
  * Generated source version: 3.1.11
  * 
  */
-@WebServiceClient(name = "getWorkEfforts", 
+@WebServiceClient(name = "getWorkEfforts",
                   wsdlLocation = "file:/C:/work/workspace/IdeaProjects/microservice-workeffort/src/main/resources/wsdl/getWorkEfforts.wsdl",
                   targetNamespace = "http://ofbiz.apache.org/service/") 
 public class GetWorkEfforts extends Service {

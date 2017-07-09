@@ -5,7 +5,7 @@
       <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -38,9 +38,8 @@
     <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.6" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.6" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.9" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
@@ -109,9 +108,10 @@
     <orderEntry type="library" name="Maven: com.netflix.archaius:archaius-core:0.7.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.code.findbugs:jsr305:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.6.6" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.6.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.8.9" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.woodstox:woodstox-core:5.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.2" level="project" />
     <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
@@ -162,5 +162,7 @@
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-ws-addr:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-ws-policy:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.neethi:neethi:3.0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.9" level="project" />
   </component>
 </module>
