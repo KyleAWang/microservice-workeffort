@@ -51,6 +51,7 @@ public final class GetWorkEffortsPortType_GetWorkEffortsPort_Client {
       
         GetWorkEfforts ss = new GetWorkEfforts(wsdlURL, SERVICE_NAME);
         GetWorkEffortsPortType port = ss.getGetWorkEffortsPort();
+
         org.apache.cxf.endpoint.Client client = ClientProxy.getClient(port);
         client.getInInterceptors().add(new LoggingInInterceptor());
         client.getOutInterceptors().add(new LoggingOutInterceptor());
