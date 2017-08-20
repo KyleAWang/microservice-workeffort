@@ -3,22 +3,13 @@ package com.kyle.microservices.service;
 import com.kyle.microservices.beans.SearchOptionsRequest;
 import com.kyle.microservices.beans.WorkEffort;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
-import com.kyle.microservices.service.getWorkEfforts.*;
-import com.kyle.microservices.utils.ConverterHandler;
-import org.apache.axis2.AxisFault;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
-import rx.internal.util.LinkedArrayList;
 
 import javax.xml.namespace.QName;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 /**
  * Created by Kyle on 6/25/2017.
@@ -74,56 +65,56 @@ public class WorkEffortService {
                 listEntries.add(mapEntry);
             }
 
-            if (StringUtils.isNotEmpty(searchOptionsRequest.getWorkEffortTypeId())) {
-                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
-                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
-                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type0.setValue("workEffortTypeId");
-                mapKey.setStdString(stdString_type0);
-                mapEntry.setMapKey(mapKey);
-
-                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
-                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type01.setValue(searchOptionsRequest.getWorkEffortTypeId());
-                mapValue.setStdString(stdString_type01);
-                mapEntry.setMapValue(mapValue);
-
-                listEntries.add(mapEntry);
-            }
-
-            if (StringUtils.isNotEmpty(searchOptionsRequest.getWorkEffortPurposeTypeId())) {
-                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
-                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
-                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type0.setValue("workEffortPurposeTypeId");
-                mapKey.setStdString(stdString_type0);
-                mapEntry.setMapKey(mapKey);
-
-                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
-                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type01.setValue(searchOptionsRequest.getWorkEffortPurposeTypeId());
-                mapValue.setStdString(stdString_type01);
-                mapEntry.setMapValue(mapValue);
-
-                listEntries.add(mapEntry);
-            }
-
-            if (StringUtils.isNotEmpty(searchOptionsRequest.getCurrentStatusId())) {
-                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
-                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
-                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type0.setValue("currentStatusId");
-                mapKey.setStdString(stdString_type0);
-                mapEntry.setMapKey(mapKey);
-
-                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
-                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
-                stdString_type01.setValue(searchOptionsRequest.getCurrentStatusId());
-                mapValue.setStdString(stdString_type01);
-                mapEntry.setMapValue(mapValue);
-
-                listEntries.add(mapEntry);
-            }
+//            if (StringUtils.isNotEmpty(searchOptionsRequest.getWorkEffortTypeId())) {
+//                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
+//                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
+//                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type0.setValue("workEffortTypeId");
+//                mapKey.setStdString(stdString_type0);
+//                mapEntry.setMapKey(mapKey);
+//
+//                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
+//                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type01.setValue(searchOptionsRequest.getWorkEffortTypeId());
+//                mapValue.setStdString(stdString_type01);
+//                mapEntry.setMapValue(mapValue);
+//
+//                listEntries.add(mapEntry);
+//            }
+//
+//            if (StringUtils.isNotEmpty(searchOptionsRequest.getWorkEffortPurposeTypeId())) {
+//                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
+//                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
+//                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type0.setValue("workEffortPurposeTypeId");
+//                mapKey.setStdString(stdString_type0);
+//                mapEntry.setMapKey(mapKey);
+//
+//                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
+//                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type01.setValue(searchOptionsRequest.getWorkEffortPurposeTypeId());
+//                mapValue.setStdString(stdString_type01);
+//                mapEntry.setMapValue(mapValue);
+//
+//                listEntries.add(mapEntry);
+//            }
+//
+//            if (StringUtils.isNotEmpty(searchOptionsRequest.getCurrentStatusId())) {
+//                GetWorkEffortsStub.MapEntry mapEntry = new GetWorkEffortsStub.MapEntry();
+//                GetWorkEffortsStub.MapKey mapKey = new GetWorkEffortsStub.MapKey();
+//                GetWorkEffortsStub.StdString_type0 stdString_type0 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type0.setValue("currentStatusId");
+//                mapKey.setStdString(stdString_type0);
+//                mapEntry.setMapKey(mapKey);
+//
+//                GetWorkEffortsStub.MapValue mapValue = new GetWorkEffortsStub.MapValue();
+//                GetWorkEffortsStub.StdString_type0 stdString_type01 = new GetWorkEffortsStub.StdString_type0();
+//                stdString_type01.setValue(searchOptionsRequest.getCurrentStatusId());
+//                mapValue.setStdString(stdString_type01);
+//                mapEntry.setMapValue(mapValue);
+//
+//                listEntries.add(mapEntry);
+//            }
         }
 
         GetWorkEffortsStub.MapEntry[] mapEntries = null;
