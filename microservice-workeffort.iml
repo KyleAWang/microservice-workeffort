@@ -4,6 +4,17 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -90,9 +101,6 @@
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.19.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.jersey:jersey-client:1.19.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.19.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.inject:guice:4.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.netflix.governator:governator-api:1.12.10" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-servlet:1.19.1" level="project" />
@@ -166,5 +174,11 @@
     <orderEntry type="library" name="Maven: org.apache.axis2:axis2-adb:1.7.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.ws.commons.axiom:axiom-dom:1.2.20" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-activation_1.1_spec:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.axis2:axis2-transport-local:1.7.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.axis2:axis2-transport-http:1.7.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
   </component>
 </module>
