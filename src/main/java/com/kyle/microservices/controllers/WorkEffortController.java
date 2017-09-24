@@ -3,6 +3,7 @@ package com.kyle.microservices.controllers;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kyle.microservices.beans.GetWorkEffortEventsByPeriodRequest;
 import com.kyle.microservices.beans.SearchOptionsRequest;
 import com.kyle.microservices.beans.WorkEffort;
 import com.kyle.microservices.service.WorkEffortService;
@@ -46,5 +47,11 @@ public class WorkEffortController {
         }
 
         return new ResponseEntity<Object>(jsonString, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/getWorkEffortEventsByPeriod", method = RequestMethod.POST, consumes = "application/json")
+    public ResponseEntity getWorkEffortEventsByPeriod(@RequestBody(required = true) GetWorkEffortEventsByPeriodRequest getWorkEffortEventsByPeriodRequest) {
+
+        return null;
     }
 }
