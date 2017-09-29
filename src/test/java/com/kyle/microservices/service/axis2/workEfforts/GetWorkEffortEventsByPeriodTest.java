@@ -7,6 +7,11 @@
 package com.kyle.microservices.service.axis2.workEfforts;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
 import java.math.BigInteger;
 import java.util.Calendar;
 
@@ -127,6 +132,18 @@ public class GetWorkEffortEventsByPeriodTest extends junit.framework.TestCase {
 
         GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriodResponse getWorkEffortEventsByPeriodResponse =
                 stub.getWorkEffortEventsByPeriod(getWorkEffortEventsByPeriod4);
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
+        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+        String jsonString = "";
+        try {
+            jsonString = mapper.writeValueAsString(getWorkEffortEventsByPeriodResponse);
+            System.out.println(jsonString);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
 
 
         assertNotNull(getWorkEffortEventsByPeriodResponse);

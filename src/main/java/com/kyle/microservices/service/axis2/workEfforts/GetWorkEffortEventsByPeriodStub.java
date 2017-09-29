@@ -7,6 +7,8 @@
 package com.kyle.microservices.service.axis2.workEfforts;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /*
  *  GetWorkEffortEventsByPeriodStub java implementation
  */
@@ -5254,6 +5256,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
         /**
          * field for CusObj
          */
+        @JsonIgnore
         protected org.apache.axiom.om.OMElement localCusObj;
 
         /*  This tracker boolean wil be used to detect whether the user called the set method
