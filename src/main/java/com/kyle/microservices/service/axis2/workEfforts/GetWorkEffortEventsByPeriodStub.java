@@ -7,8 +7,6 @@
 package com.kyle.microservices.service.axis2.workEfforts;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 /*
  *  GetWorkEffortEventsByPeriodStub java implementation
  */
@@ -2068,7 +2066,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
         /**
          * field for CusObj
          */
-        protected org.apache.axiom.om.OMElement localCusObj;
+        protected java.lang.String localCusObj;
 
         /*  This tracker boolean wil be used to detect whether the user called the set method
          *   for this attribute. It will be used to determine whether to include this field
@@ -2104,9 +2102,9 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
 
         /**
          * Auto generated getter method
-         * @return org.apache.axiom.om.OMElement
+         * @return java.lang.String
          */
-        public org.apache.axiom.om.OMElement getCusObj() {
+        public java.lang.String getCusObj() {
             return localCusObj;
         }
 
@@ -2114,7 +2112,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
          * Auto generated setter method
          * @param param CusObj
          */
-        public void setCusObj(org.apache.axiom.om.OMElement param) {
+        public void setCusObj(java.lang.String param) {
             localCusObjTracker = param != null;
 
             this.localCusObj = param;
@@ -2189,7 +2187,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
                     throw new org.apache.axis2.databinding.ADBException(
                         "cus-obj cannot be null!!");
                 } else {
-                    localCusObj.serialize(xmlWriter);
+                    xmlWriter.writeCharacters(localCusObj);
                 }
 
                 xmlWriter.writeEndElement();
@@ -2484,7 +2482,12 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
                             } // End of if for expected property start element
 
                             else
-                             if (reader.isStartElement()) {
+                             if ((reader.isStartElement() &&
+                                    new javax.xml.namespace.QName(
+                                        "http://ofbiz.apache.org/service/",
+                                        "cus-obj").equals(reader.getName())) ||
+                                    new javax.xml.namespace.QName("", "cus-obj").equals(
+                                        reader.getName())) {
                                 nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                                         "nil");
 
@@ -2497,14 +2500,8 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
 
                                 java.lang.String content = reader.getElementText();
 
-                                org.apache.axiom.om.OMFactory fac = org.apache.axiom.om.OMAbstractFactory.getOMFactory();
-                                org.apache.axiom.om.OMNamespace omNs = fac.createOMNamespace("http://ofbiz.apache.org/service/",
-                                        "");
-                                org.apache.axiom.om.OMElement _valueCusObj = fac.createOMElement("cus-obj",
-                                        omNs);
-                                _valueCusObj.addChild(fac.createOMText(
-                                        _valueCusObj, content));
-                                object.setCusObj(_valueCusObj);
+                                object.setCusObj(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
+                                        content));
 
                                 reader.next();
                             } // End of if for expected property start element
@@ -5256,8 +5253,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
         /**
          * field for CusObj
          */
-        @JsonIgnore
-        protected org.apache.axiom.om.OMElement localCusObj;
+        protected java.lang.String localCusObj;
 
         /*  This tracker boolean wil be used to detect whether the user called the set method
          *   for this attribute. It will be used to determine whether to include this field
@@ -5959,9 +5955,9 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
 
         /**
          * Auto generated getter method
-         * @return org.apache.axiom.om.OMElement
+         * @return java.lang.String
          */
-        public org.apache.axiom.om.OMElement getCusObj() {
+        public java.lang.String getCusObj() {
             return localCusObj;
         }
 
@@ -5969,7 +5965,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
          * Auto generated setter method
          * @param param CusObj
          */
-        public void setCusObj(org.apache.axiom.om.OMElement param) {
+        public void setCusObj(java.lang.String param) {
             clearAllSettingTrackers();
             localCusObjTracker = param != null;
 
@@ -6329,7 +6325,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
                     throw new org.apache.axis2.databinding.ADBException(
                         "cus-obj cannot be null!!");
                 } else {
-                    localCusObj.serialize(xmlWriter);
+                    xmlWriter.writeCharacters(localCusObj);
                 }
 
                 xmlWriter.writeEndElement();
@@ -6978,7 +6974,12 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
                             } // End of if for expected property start element
 
                             else
-                             if (reader.isStartElement()) {
+                             if ((reader.isStartElement() &&
+                                    new javax.xml.namespace.QName(
+                                        "http://ofbiz.apache.org/service/",
+                                        "cus-obj").equals(reader.getName())) ||
+                                    new javax.xml.namespace.QName("", "cus-obj").equals(
+                                        reader.getName())) {
                                 nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
                                         "nil");
 
@@ -6991,14 +6992,8 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
 
                                 java.lang.String content = reader.getElementText();
 
-                                org.apache.axiom.om.OMFactory fac = org.apache.axiom.om.OMAbstractFactory.getOMFactory();
-                                org.apache.axiom.om.OMNamespace omNs = fac.createOMNamespace("http://ofbiz.apache.org/service/",
-                                        "");
-                                org.apache.axiom.om.OMElement _valueCusObj = fac.createOMElement("cus-obj",
-                                        omNs);
-                                _valueCusObj.addChild(fac.createOMText(
-                                        _valueCusObj, content));
-                                object.setCusObj(_valueCusObj);
+                                object.setCusObj(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
+                                        content));
 
                                 reader.next();
                             } // End of if for expected property start element
@@ -7029,13 +7024,13 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
         /**
          * field for CusObj
          */
-        protected org.apache.axiom.om.OMElement localCusObj;
+        protected java.lang.String localCusObj;
 
         /**
          * Auto generated getter method
-         * @return org.apache.axiom.om.OMElement
+         * @return java.lang.String
          */
-        public org.apache.axiom.om.OMElement getCusObj() {
+        public java.lang.String getCusObj() {
             return localCusObj;
         }
 
@@ -7043,7 +7038,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
          * Auto generated setter method
          * @param param CusObj
          */
-        public void setCusObj(org.apache.axiom.om.OMElement param) {
+        public void setCusObj(java.lang.String param) {
             this.localCusObj = param;
         }
 
@@ -7099,7 +7094,7 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
                 throw new org.apache.axis2.databinding.ADBException(
                     "cus-obj cannot be null !!");
             } else {
-                localCusObj.serialize(xmlWriter);
+                xmlWriter.writeCharacters(localCusObj);
             }
 
             xmlWriter.writeEndElement();
@@ -7346,16 +7341,26 @@ public class GetWorkEffortEventsByPeriodStub extends org.apache.axis2.client.Stu
 
                     while (!reader.isEndElement()) {
                         if (reader.isStartElement()) {
-                            if (reader.isStartElement()) {
-                                //use the QName from the parser as the name for the builder
-                                javax.xml.namespace.QName startQname1 = reader.getName();
+                            if ((reader.isStartElement() &&
+                                    new javax.xml.namespace.QName(
+                                        "http://ofbiz.apache.org/service/",
+                                        "cus-obj").equals(reader.getName())) ||
+                                    new javax.xml.namespace.QName("", "cus-obj").equals(
+                                        reader.getName())) {
+                                nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance",
+                                        "nil");
 
-                                // We need to wrap the reader so that it produces a fake START_DOCUMENT event
-                                // this is needed by the builder classes
-                                org.apache.axis2.databinding.utils.NamedStaxOMBuilder builder1 =
-                                    new org.apache.axis2.databinding.utils.NamedStaxOMBuilder(new org.apache.axis2.util.StreamWrapper(
-                                            reader), startQname1);
-                                object.setCusObj(builder1.getOMElement());
+                                if ("true".equals(nillableValue) ||
+                                        "1".equals(nillableValue)) {
+                                    throw new org.apache.axis2.databinding.ADBException(
+                                        "The element: " + "cus-obj" +
+                                        "  cannot be null");
+                                }
+
+                                java.lang.String content = reader.getElementText();
+
+                                object.setCusObj(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(
+                                        content));
                             } // End of if for expected property start element
 
                             else {

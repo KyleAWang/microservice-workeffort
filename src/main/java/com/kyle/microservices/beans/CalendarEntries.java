@@ -9,6 +9,6 @@ import java.util.List;
  */
 public @Data
 class CalendarEntries {
-    private String cusObj;
-    private List<CalendarEntry> entries;
+    private String key;
+    private List<CalendarEntry> calendarEntries;
 }

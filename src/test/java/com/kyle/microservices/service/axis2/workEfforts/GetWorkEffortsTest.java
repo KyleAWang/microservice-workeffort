@@ -7,6 +7,10 @@
 package com.kyle.microservices.service.axis2.workEfforts;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.kyle.microservices.beans.WorkEffort;
 
 /*
@@ -42,16 +46,19 @@ public class GetWorkEffortsTest extends junit.framework.TestCase {
         getWorkEfforts4.setMapMap(mapMap);
 
         GetWorkEffortsStub.GetWorkEffortsResponse getWorkEffortsResponse = stub.getWorkEfforts(getWorkEfforts4);
-        GetWorkEffortsStub.MapEntry[] entries = getWorkEffortsResponse.getMapHashMap().getMapEntry();
 
-        for (GetWorkEffortsStub.MapEntry entry: entries) {
-            String key = entry.getMapKey().getStdString().getValue();
-            WorkEffort workEffort = new WorkEffort();
-            if (key.equals("workEfforts")) {
-                GetWorkEffortsStub.ColCollection colLinkedList = entry.getMapValue().getColLinkedList();
-                GetWorkEffortsStub.EevalWorkEffort_type0[] eevalWorkEfforts = colLinkedList.getEevalWorkEffort();
-            }
-        }
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+//        mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
+//        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+//        String jsonString = "";
+//        try {
+//            jsonString = mapper.writeValueAsString(getWorkEffortsResponse);
+//            System.out.println(jsonString);
+//        } catch (JsonProcessingException e) {
+//            e.printStackTrace();
+//        }
+
         assertNotNull(stub.getWorkEfforts(getWorkEfforts4));
     }
 

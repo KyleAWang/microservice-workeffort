@@ -122,9 +122,6 @@ public class GetWorkEffortEventsByPeriodTest extends junit.framework.TestCase {
         loginPssMapValue.setStdString(loginPssValue);
         loginPssMapEntry.setMapValue(loginPssMapValue);
 
-
-
-
         GetWorkEffortEventsByPeriodStub.MapEntry[] mapEntries = new GetWorkEffortEventsByPeriodStub.MapEntry[]{mapEntry,
                 calendarTypeMapEntry, numPeriodsMapEntry, periodTypeMapEntry, loginMapEntry, loginPssMapEntry};
         mapMap.setMapEntry(mapEntries);
@@ -133,6 +130,8 @@ public class GetWorkEffortEventsByPeriodTest extends junit.framework.TestCase {
         GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriodResponse getWorkEffortEventsByPeriodResponse =
                 stub.getWorkEffortEventsByPeriod(getWorkEffortEventsByPeriod4);
 
+        assertNotNull(getWorkEffortEventsByPeriodResponse);
+
         ObjectMapper mapper = new ObjectMapper();
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
@@ -140,13 +139,11 @@ public class GetWorkEffortEventsByPeriodTest extends junit.framework.TestCase {
         String jsonString = "";
         try {
             jsonString = mapper.writeValueAsString(getWorkEffortEventsByPeriodResponse);
+            assertTrue(jsonString.length() > 0);
             System.out.println(jsonString);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-
-
-        assertNotNull(getWorkEffortEventsByPeriodResponse);
     }
 
     /**

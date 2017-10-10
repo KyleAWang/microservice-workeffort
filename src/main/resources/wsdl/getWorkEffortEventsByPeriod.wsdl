@@ -87,7 +87,7 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="eeval-WorkEffortAndPartyAssignAndType" type="tns:map-Map">
+            <xsd:element name="eeval-WorkEffortAndPartyAssignAndType">
                 <xsd:annotation>
                     <xsd:documentation>The name of element need to be appended with name of entity such as eeval-Product
                         for Product entity.
@@ -116,7 +116,7 @@
                     <xsd:attribute name="workEffortTypeId" type="xsd:double" use="optional"/>
                 </xsd:complexType>
             </xsd:element>
-            <xsd:element name="cus-obj">
+            <xsd:element name="cus-obj" type="xsd:string">
                 <xsd:annotation>
                     <xsd:documentation>Object content is hex encoded so does not need to be in a CDATA block.
                     </xsd:documentation>

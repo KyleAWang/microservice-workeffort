@@ -2,6 +2,7 @@ package com.kyle.microservices.beans;
 
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -10,5 +11,8 @@ import java.util.List;
 public @Data
 class PeriodEntry {
     private String key;
-    private List<CalendarEntry> calendarEntries;
+    private CalendarEntries calendarEntriesByDateRange;
+    private CalendarEntries calendarEntries;
+    private Date start;
+    private Date end;
 }

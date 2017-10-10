@@ -116,7 +116,7 @@
                     <xsd:attribute name="workEffortTypeId" type="xsd:double" use="optional"/>
                 </xsd:complexType>
             </xsd:element>
-            <xsd:element name="cus-obj">
+            <xsd:element name="cus-obj" type="xsd:string">
                 <xsd:annotation>
                     <xsd:documentation>Object content is hex encoded so does not need to be in a CDATA block.
                     </xsd:documentation>
