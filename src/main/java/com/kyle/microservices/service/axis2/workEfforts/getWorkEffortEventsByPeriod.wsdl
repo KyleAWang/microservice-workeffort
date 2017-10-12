@@ -87,7 +87,7 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="eeval-WorkEffortAndPartyAssignAndType" type="tns:map-Map">
+            <xsd:element name="eeval-WorkEffortAndPartyAssignAndType">
                 <xsd:annotation>
                     <xsd:documentation>The name of element need to be appended with name of entity such as eeval-Product
                         for Product entity.
@@ -99,10 +99,10 @@
                     <xsd:attribute name="createdDate" type="xsd:string" use="optional"/>
                     <xsd:attribute name="description" type="xsd:string" use="optional"/>
                     <xsd:attribute name="estimatedCompletionDate" type="xsd:string" use="optional"/>
-                    <xsd:attribute name="estimatedMilliSeconds" type="xsd:string" use="optional"/>
+                    <xsd:attribute name="estimatedMilliSeconds" type="xsd:double" use="optional"/>
                     <xsd:attribute name="estimatedStartDate" type="xsd:string" use="optional"/>
-                    <xsd:attribute name="lastModifiedByUserLogin" type="xsd:long" use="optional"/>
-                    <xsd:attribute name="lastModifiedDate" type="xsd:long" use="optional"/>
+                    <xsd:attribute name="lastModifiedByUserLogin" type="xsd:string" use="optional"/>
+                    <xsd:attribute name="lastModifiedDate" type="xsd:string" use="optional"/>
                     <xsd:attribute name="lastStatusUpdate" type="xsd:string" use="optional"/>
                     <xsd:attribute name="partyId" type="xsd:string" use="optional"/>
                     <xsd:attribute name="revisionNumber" type="xsd:string" use="optional"/>
@@ -112,8 +112,8 @@
                     <xsd:attribute name="statusId" type="xsd:string" use="optional"/>
                     <xsd:attribute name="workEffortId" type="xsd:string" use="optional"/>
                     <xsd:attribute name="workEffortName" type="xsd:string" use="optional"/>
-                    <xsd:attribute name="workEffortPurposeTypeId" type="xsd:double" use="optional"/>
-                    <xsd:attribute name="workEffortTypeId" type="xsd:double" use="optional"/>
+                    <xsd:attribute name="workEffortPurposeTypeId" type="xsd:string" use="optional"/>
+                    <xsd:attribute name="workEffortTypeId" type="xsd:string" use="optional"/>
                 </xsd:complexType>
             </xsd:element>
             <xsd:element name="cus-obj" type="xsd:string">

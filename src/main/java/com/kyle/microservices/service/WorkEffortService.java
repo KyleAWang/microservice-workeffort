@@ -156,9 +156,9 @@ public class WorkEffortService {
             workEffort.setNoteId(item.getNoteId());
         if (item.getPriority() > 0) {
             workEffort.setPriority(item.getPriority());
-            if (item.getPercentComplete() > 0)
-                workEffort.setPercentComplete(item.getPercentComplete());
         }
+        if (item.getPercentComplete() > 0)
+            workEffort.setPercentComplete(item.getPercentComplete());
         if (item.getLastStatusUpdate() != null)
             workEffort.setLastStatusUpdate(item.getLastStatusUpdate());
     }

@@ -3,10 +3,7 @@ package com.kyle.microservices.controllers;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kyle.microservices.beans.GetWorkEffortEventsByPeriodRequest;
-import com.kyle.microservices.beans.SearchOptionsRequest;
-import com.kyle.microservices.beans.WorkEffort;
-import com.kyle.microservices.beans.WorkEfforts;
+import com.kyle.microservices.beans.*;
 import com.kyle.microservices.service.WorkEffortEventsByPeriodService;
 import com.kyle.microservices.service.WorkEffortService;
 import io.swagger.annotations.Api;
@@ -73,12 +70,22 @@ public class WorkEffortController {
     @RequestMapping(value = "/getWorkEffortEventsByPeriod", method = RequestMethod.POST, consumes = "application/json")
     public ResponseEntity getWorkEffortEventsByPeriod(@RequestBody(required = true) GetWorkEffortEventsByPeriodRequest getWorkEffortEventsByPeriodRequest) {
         String jsonString = "";
+        WorkEffortEventsByPeriod workEffortEventsByPeriod = null;
         try {
-            jsonString = workEffortEventsByPeriodService.getWorkEffortEventsByPeriod(getWorkEffortEventsByPeriodRequest);
+            workEffortEventsByPeriod = workEffortEventsByPeriodService.getWorkEffortEventsByPeriod(getWorkEffortEventsByPeriodRequest);
         } catch (Exception e) {
             e.printStackTrace();
             new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        try {
+            jsonString = mapper.writeValueAsString(workEffortEventsByPeriod);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
         return new ResponseEntity(jsonString, HttpStatus.OK);
     }
 }

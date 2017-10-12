@@ -10,7 +10,6 @@ import java.util.List;
  */
 public @Data
 class PeriodEntry {
-    private String key;
     private CalendarEntries calendarEntriesByDateRange;
     private CalendarEntries calendarEntries;
     private Date start;

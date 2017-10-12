@@ -43,7 +43,7 @@ public abstract class GetWorkEffortEventsByPeriodCallbackHandler {
      * override this method for handling normal response from getWorkEffortEventsByPeriod operation
      */
     public void receiveResultgetWorkEffortEventsByPeriod(
-        com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriodResponse result) {
+            com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriodResponse result) {
     }
 
     /**

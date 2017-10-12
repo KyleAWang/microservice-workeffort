@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.kyle.microservices.beans.*;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub;
+import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import java.util.logging.Logger;
 public class WorkEffortEventsByPeriodService {
     private Logger logger = Logger.getLogger(WorkEffortEventsByPeriodService.class.getName());
 
-    public String getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest) throws Exception {
+    public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest) throws Exception {
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub stub =
                 new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(); //the default implementation should point to the right endpoint
@@ -175,33 +176,49 @@ public class WorkEffortEventsByPeriodService {
                 workEffortEventsByPeriod.setMaxConcurrentEntries(entries[i].getMapValue().getStdInteger().getValue());
             } else if (entries[i].getMapKey().getStdString().getValue().equals("periods")) {
                 GetWorkEffortEventsByPeriodStub.MapHashMap[] mapHashMaps = entries[i].getMapValue().getColLinkedList().getMapHashMap();
+                List<PeriodEntry> periods = new ArrayList<>();
+                workEffortEventsByPeriod.setPeriods(periods);
                 for (int j = 0; j < mapHashMaps.length; j++) {
                     for (int k = 0; k < mapHashMaps[j].getMapEntry().length; k++) {
+                        PeriodEntry periodEntry = new PeriodEntry();
                         GetWorkEffortEventsByPeriodStub.MapEntry mapEntryJK = mapHashMaps[j].getMapEntry()[k];
                         if (mapEntryJK.getMapKey().getStdString().getValue().equals("calendarEntriesByDateRange")) {
                             GetWorkEffortEventsByPeriodStub.MapEntry[] mapEntries1 = mapEntryJK.getMapValue().getMapTreeMap().getMapEntry();
                             for (GetWorkEffortEventsByPeriodStub.MapEntry mapEntry : mapEntries1) {
-                                CalendarEntries calendarEntries = new CalendarEntries();
-                                calendarEntries.setKey(mapEntry.getMapKey().getCusObj());
                                 GetWorkEffortEventsByPeriodStub.MapHashMap[] mapHashMaps1 = mapEntry.getMapValue().getColLinkedList().getMapHashMap();
+                                List<CalendarEntry> cEntries = new ArrayList();
                                 for (GetWorkEffortEventsByPeriodStub.MapHashMap mapHashMap : mapHashMaps1) {
+                                    CalendarEntry calendarEntry = new CalendarEntry();
                                     for (GetWorkEffortEventsByPeriodStub.MapEntry mapEntry1 : mapHashMap.getMapEntry()) {
-                                        CalendarEntry calendarEntry = new CalendarEntry();
-                                        if (mapEntry1.getMapKey().getStdString().equals("startOfPeriod")) {
-                                            calendarEntry.setStartOfPeriod(mapEntry1.getMapValue().getStdBoolean().getValue());
-                                        }else if (mapEntry1.getMapKey().getStdString().equals("workEffort")) {
-                                            WorkEffort workEffort = new WorkEffort();
-                                        }
+                                        convertToCalendarEntry(mapEntry1, calendarEntry);
                                     }
+                                    cEntries.add(calendarEntry);
                                 }
+                                CalendarEntries calendarEntriesByDateRange = new CalendarEntries();
+                                calendarEntriesByDateRange.setKey(mapEntry.getMapKey().getCusObj());
+                                calendarEntriesByDateRange.setCalendarEntries(cEntries);
+                                periodEntry.setCalendarEntriesByDateRange(calendarEntriesByDateRange);
                             }
                         } else if (mapEntryJK.getMapKey().getStdString().getValue().equals("calendarEntries")) {
-
+                            GetWorkEffortEventsByPeriodStub.MapHashMap[] mapHashMaps1 = mapEntryJK.getMapValue().getColLinkedList().getMapHashMap();
+                            List<CalendarEntry> cEntries = new ArrayList<>();
+                            for (GetWorkEffortEventsByPeriodStub.MapHashMap mapHashMap : mapHashMaps1){
+                                GetWorkEffortEventsByPeriodStub.MapEntry[] mapEntries2 = mapHashMap.getMapEntry();
+                                CalendarEntry calendarEntry = new CalendarEntry();
+                                for (GetWorkEffortEventsByPeriodStub.MapEntry mapEntry : mapEntries2) {
+                                    convertToCalendarEntry(mapEntry, calendarEntry);
+                                }
+                                cEntries.add(calendarEntry);
+                            }
+                            CalendarEntries calendarEntries = new CalendarEntries();
+                            periodEntry.setCalendarEntries(calendarEntries);
+                            calendarEntries.setCalendarEntries(cEntries);
                         } else if (mapEntryJK.getMapKey().getStdString().getValue().equals("start")) {
-
+                            periodEntry.setStart(mapEntryJK.getMapValue().getSqlTimestamp().getValue().getTime());
                         } else if (mapEntryJK.getMapKey().getStdString().getValue().equals("end")) {
-
+                            periodEntry.setEnd(mapEntryJK.getMapValue().getSqlTimestamp().getValue().getTime());
                         }
+                        periods.add(periodEntry);
                     }
 
                 }
@@ -209,25 +226,67 @@ public class WorkEffortEventsByPeriodService {
         }
 
 
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
-        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        String jsonString = "";
-        try {
-            jsonString = mapper.writeValueAsString(getWorkEffortEventsByPeriodResponse);
-            System.out.println(jsonString);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
+//        ObjectMapper mapper = new ObjectMapper();
+//        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+//        mapper.setSerializationInclusion(JsonInclude.Include.NON_DEFAULT);
+//        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+//        String jsonString = "";
+//        try {
+//            jsonString = mapper.writeValueAsString(workEffortEventsByPeriod);
+//            System.out.println(jsonString);
+//        } catch (JsonProcessingException e) {
+//            e.printStackTrace();
+//        }
 
-        return jsonString;
+        return workEffortEventsByPeriod;
     }
-
 
 
     private org.apache.axis2.databinding.ADBBean getTypeObject(
             java.lang.Class type) throws java.lang.Exception {
         return (org.apache.axis2.databinding.ADBBean) type.newInstance();
+    }
+
+
+    private void convertToCalendarEntry(GetWorkEffortEventsByPeriodStub.MapEntry mapEntry1, CalendarEntry calendarEntry) {
+        if (mapEntry1.getMapKey().getStdString().getValue().equals("startOfPeriod")) {
+            calendarEntry.setStartOfPeriod(mapEntry1.getMapValue().getStdBoolean().getValue());
+        } else if (mapEntry1.getMapKey().getStdString().getValue().equals("workEffort")) {
+            WorkEffort workEffort = new WorkEffort();
+            GetWorkEffortEventsByPeriodStub.EevalWorkEffortAndPartyAssignAndType_type0 type0 = mapEntry1.getMapValue().getEevalWorkEffortAndPartyAssignAndType();
+            convertToWorkEffort(type0, workEffort);
+            calendarEntry.setWorkEffort(workEffort);
+        } else if (mapEntry1.getMapKey().getStdString().getValue().equals("periodSpan")) {
+            calendarEntry.setPeriodSpan(mapEntry1.getMapValue().getStdInteger().getValue());
+        } else if (mapEntry1.getMapKey().getStdString().getValue().equals("calEntryRange")) {
+            calendarEntry.setCalEntryRange(mapEntry1.getMapValue().getCusObj());
+        }
+    }
+
+    private void convertToWorkEffort(GetWorkEffortEventsByPeriodStub.EevalWorkEffortAndPartyAssignAndType_type0 item, WorkEffort workEffort) {
+        if (item.getWorkEffortId() != null)
+            workEffort.setWorkEffortId(item.getWorkEffortId());
+        if (item.getActualStartDate() != null)
+            workEffort.setActualStartDate(item.getActualStartDate());
+        if (item.getCreatedByUserLogin() != null)
+            workEffort.setCreatedByUserLogin(item.getCreatedByUserLogin());
+        if (item.getCreatedDate() != null)
+            workEffort.setCreatedDate(item.getCreatedDate());
+        if (item.getDescription() != null)
+            workEffort.setDescription(item.getDescription());
+        if (item.getEstimatedCompletionDate() != null)
+            workEffort.setEstimatedCompletionDate(item.getEstimatedCompletionDate());
+        if (item.getEstimatedMilliSeconds() > 0)
+            workEffort.setEstimatedMilliSeconds(item.getEstimatedMilliSeconds());
+        if (item.getEstimatedStartDate() != null)
+            workEffort.setEstimatedStartDate(item.getEstimatedStartDate());
+        if (item.getLastModifiedByUserLogin() != null)
+            workEffort.setLastModifiedByUserLogin(item.getLastModifiedByUserLogin());
+        if (item.getLastModifiedDate() != null)
+            workEffort.setLastModifiedDate(item.getLastModifiedDate());
+        if (item.getLastStatusUpdate() != null)
+            workEffort.setLastStatusUpdate(item.getLastStatusUpdate());
+        if (item.getLastStatusUpdate() != null)
+            workEffort.setLastStatusUpdate(item.getLastStatusUpdate());
     }
 }
