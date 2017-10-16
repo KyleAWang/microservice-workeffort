@@ -1,20 +1,9 @@
 spring:
   application:
     name: workeffort-service
-#  freemarker:
-#    enabled: false
-#  thymeleaf:
-#    cache: false
-#    prefix: classpath:/workeffort-server/templates/
-
-
-#error:
-#  path: /error
 
 server:
   port: 2222
-
-
 
 
 eureka:
@@ -24,3 +13,8 @@ eureka:
     instance:
       leaseRenewalIntervalInSecondes: 5
 
+
+business:
+  endpoint:
+    host: localhost
+    port: 8080

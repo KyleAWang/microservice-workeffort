@@ -17,12 +17,13 @@ import com.kyle.microservices.beans.WorkEffort;
  *  GetWorkEffortsTest Junit test case
  */
 public class GetWorkEffortsTest extends junit.framework.TestCase {
+    private static final String service_endpoint = "http://192.168.20.7:8080/webtools/control/SOAPService";
     /**
      * Auto generated test method
      */
     public void testgetWorkEfforts() throws java.lang.Exception {
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub stub =
-            new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub(); //the default implementation should point to the right endpoint
+            new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub(service_endpoint); //the default implementation should point to the right endpoint
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts getWorkEfforts4 =
             (com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts) getTestObject(com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts.class);

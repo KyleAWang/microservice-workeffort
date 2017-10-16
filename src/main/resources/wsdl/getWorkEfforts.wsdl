@@ -258,7 +258,7 @@
     <wsdl:portType name="getWorkEffortsPortType">
         <wsdl:operation name="getWorkEfforts">
             <wsdl:input message="tns:getWorkEffortsRequest"/>
-            <wsdl:output message="tns:getWorkEffortsResponse"/>
+             <wsdl:output message="tns:getWorkEffortsResponse"/>
         </wsdl:operation>
     </wsdl:portType>
     <wsdl:binding name="getWorkEffortsSoapBinding" type="tns:getWorkEffortsPortType">

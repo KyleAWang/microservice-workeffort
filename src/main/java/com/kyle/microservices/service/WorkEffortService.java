@@ -4,8 +4,14 @@ import com.kyle.microservices.beans.SearchOptionsRequest;
 import com.kyle.microservices.beans.WorkEffort;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +25,17 @@ public class WorkEffortService {
     private Logger logger = Logger.getLogger(WorkEffortService.class.getName());
     private static final QName SERVICE_NAME = new QName("http://ofbiz.apache.org/service/", "getWorkEfforts");
     private static final String WORK_EFFORT_ID = "workEffortId";
+    @Value("${business.endpoint.host}")
+    private String service_host;
+    @Value("${business.endpoint.port}")
+    private String service_port;
 
     public List<WorkEffort> getWorkEfforts(SearchOptionsRequest searchOptionsRequest) throws Exception {
+        String service_endpoint = "http://" + service_host + ":" + service_port + "/webtools/control/SOAPService";
+        logger.info("service endpoint:" + service_endpoint);
+
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub stub =
-                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub(); //the default implementation should point to the right endpoint
+                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub(service_endpoint); //the default implementation should point to the right endpoint
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts getWorkEfforts4 =
                 (com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts) getTypeObject(com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub.GetWorkEfforts.class);

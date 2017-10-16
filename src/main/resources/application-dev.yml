@@ -1,0 +1,4 @@
+business:
+  endpoint:
+    host: 192.168.20.7
+    port: 8080

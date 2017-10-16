@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.kyle.microservices.beans.*;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -19,11 +20,16 @@ import java.util.logging.Logger;
  */
 public class WorkEffortEventsByPeriodService {
     private Logger logger = Logger.getLogger(WorkEffortEventsByPeriodService.class.getName());
+    @Value("${business.endpoint.host}")
+    private static String service_host;
+    @Value("${business.endpoint.port}")
+    private static String service_port;
+    private static final String service_endpoint = "http://"+service_host+":"+service_port+"/webtools/control/SOAPService";
 
     public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest) throws Exception {
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub stub =
-                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(); //the default implementation should point to the right endpoint
+                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(service_endpoint); //the default implementation should point to the right endpoint
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod getWorkEffortEventsByPeriod4 =
                 (com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod) getTypeObject(com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod.class);
