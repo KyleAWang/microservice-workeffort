@@ -21,12 +21,12 @@ import java.util.logging.Logger;
 public class WorkEffortEventsByPeriodService {
     private Logger logger = Logger.getLogger(WorkEffortEventsByPeriodService.class.getName());
     @Value("${business.endpoint.host}")
-    private static String service_host;
+    private String service_host;
     @Value("${business.endpoint.port}")
-    private static String service_port;
-    private static final String service_endpoint = "http://"+service_host+":"+service_port+"/webtools/control/SOAPService";
+    private String service_port;
 
     public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest) throws Exception {
+        String service_endpoint = "http://"+service_host+":"+service_port+"/webtools/control/SOAPService";
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub stub =
                 new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(service_endpoint); //the default implementation should point to the right endpoint

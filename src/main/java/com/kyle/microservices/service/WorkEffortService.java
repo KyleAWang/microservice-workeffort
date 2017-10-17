@@ -4,14 +4,9 @@ import com.kyle.microservices.beans.SearchOptionsRequest;
 import com.kyle.microservices.beans.WorkEffort;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.List;

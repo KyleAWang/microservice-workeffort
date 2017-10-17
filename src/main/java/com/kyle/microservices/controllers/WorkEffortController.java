@@ -42,7 +42,7 @@ public class WorkEffortController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @RequestMapping(value = "/getworkefforts", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity getWorkEfforts(@RequestBody(required = false) SearchOptionsRequest searchOptionsRequest) {
+    public ResponseEntity<String> getWorkEfforts(@RequestBody(required = false) SearchOptionsRequest searchOptionsRequest) {
         WorkEfforts workEfforts = new WorkEfforts();
         try {
             workEfforts.setWorkEfforts(workEffortService.getWorkEfforts(searchOptionsRequest));
@@ -59,7 +59,7 @@ public class WorkEffortController {
             e.printStackTrace();
         }
 
-        return new ResponseEntity<Object>(jsonString, HttpStatus.OK);
+        return new ResponseEntity<String>(jsonString, HttpStatus.OK);
     }
 
     @ApiOperation(value = "Get work efforts by period", response = List.class)
@@ -68,7 +68,7 @@ public class WorkEffortController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @RequestMapping(value = "/getWorkEffortEventsByPeriod", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity getWorkEffortEventsByPeriod(@RequestBody(required = true) GetWorkEffortEventsByPeriodRequest getWorkEffortEventsByPeriodRequest) {
+    public ResponseEntity<String> getWorkEffortEventsByPeriod(@RequestBody(required = true) GetWorkEffortEventsByPeriodRequest getWorkEffortEventsByPeriodRequest) {
         String jsonString = "";
         WorkEffortEventsByPeriod workEffortEventsByPeriod = null;
         try {
@@ -86,6 +86,6 @@ public class WorkEffortController {
             e.printStackTrace();
         }
 
-        return new ResponseEntity(jsonString, HttpStatus.OK);
+        return new ResponseEntity<String>(jsonString, HttpStatus.OK);
     }
 }

@@ -24,6 +24,16 @@ public class WorkEffortEventsByPeriodServiceTest {
     @Autowired
     private WorkEffortEventsByPeriodService workEffortEventsByPeriodService;
 
+    
+//    {
+//        "calendarType": "CAL_PERSONAL",
+//            "numPeriods":35,
+//            "password": "ofbiz",
+//            "periodType": 5,
+//            "start": "2017-09-23",
+//            "username": "admin",
+//            "workEffortTypeId": "string"
+//    }
     @Test
     public void getWorkEffortEventsByPeriod() throws Exception {
         GetWorkEffortEventsByPeriodRequest request = new GetWorkEffortEventsByPeriodRequest();
