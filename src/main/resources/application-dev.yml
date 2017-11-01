@@ -1,4 +1,12 @@
 business:
   endpoint:
-    host: 192.168.20.7
+    protocol: http
+    host: 192.168.20.9
     port: 8080
+
+
+ms:
+  user:
+    endpoint:
+      host: localhost
+      port: 2223

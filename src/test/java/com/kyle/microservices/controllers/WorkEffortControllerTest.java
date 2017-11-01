@@ -35,7 +35,7 @@ public class WorkEffortControllerTest {
     @Test
     public void getWorkEfforts() throws Exception {
         given(this.workEffortController.getWorkEfforts(null))
-                .willReturn(new ResponseEntity<Object>("", HttpStatus.OK));
+                .willReturn(new ResponseEntity("", HttpStatus.OK));
         this.mockMvc.perform(post("/getworkefforts")
                 .contentType("application/json"))
                 .andExpect(status().isOk());

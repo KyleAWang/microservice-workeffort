@@ -16,5 +16,14 @@ eureka:
 
 business:
   endpoint:
+    protocol: http
     host: localhost
     port: 8080
+
+
+ms:
+  user:
+    endpoint:
+      protocol: http
+      host: localhost
+      port: 2223

@@ -4,6 +4,7 @@ import com.kyle.microservices.beans.SearchOptionsRequest;
 import com.kyle.microservices.beans.WorkEffort;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,9 @@ public class WorkEffortService {
     private String service_host;
     @Value("${business.endpoint.port}")
     private String service_port;
+
+    @Autowired
+    private UserLoginService userLoginService;
 
     public List<WorkEffort> getWorkEfforts(SearchOptionsRequest searchOptionsRequest) throws Exception {
         String service_endpoint = "http://" + service_host + ":" + service_port + "/webtools/control/SOAPService";

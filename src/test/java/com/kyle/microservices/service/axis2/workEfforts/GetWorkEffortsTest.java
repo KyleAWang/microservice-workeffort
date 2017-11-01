@@ -17,7 +17,7 @@ import com.kyle.microservices.beans.WorkEffort;
  *  GetWorkEffortsTest Junit test case
  */
 public class GetWorkEffortsTest extends junit.framework.TestCase {
-    private static final String service_endpoint = "http://192.168.20.7:8080/webtools/control/SOAPService";
+    private static final String service_endpoint = "http://192.168.20.9:8080/webtools/control/SOAPService";
     /**
      * Auto generated test method
      */

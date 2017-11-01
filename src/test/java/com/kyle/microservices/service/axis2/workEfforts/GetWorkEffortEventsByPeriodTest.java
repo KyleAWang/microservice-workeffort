@@ -19,12 +19,13 @@ import java.util.Calendar;
  *  GetWorkEffortEventsByPeriodTest Junit test case
  */
 public class GetWorkEffortEventsByPeriodTest extends junit.framework.TestCase {
+    private static final String service_endpoint = "http://192.168.20.9:8080/webtools/control/SOAPService";
     /**
      * Auto generated test method
      */
     public void testgetWorkEffortEventsByPeriod() throws java.lang.Exception {
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub stub =
-            new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(); //the default implementation should point to the right endpoint
+            new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(service_endpoint); //the default implementation should point to the right endpoint
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod getWorkEffortEventsByPeriod4 =
             (com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod) getTestObject(com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod.class);

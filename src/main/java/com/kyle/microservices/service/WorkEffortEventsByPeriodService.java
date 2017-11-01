@@ -7,7 +7,10 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.kyle.microservices.beans.*;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub;
 import com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortsStub;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -18,18 +21,41 @@ import java.util.logging.Logger;
 /**
  * Created by Kyle on 9/24/2017.
  */
+@Service
 public class WorkEffortEventsByPeriodService {
     private Logger logger = Logger.getLogger(WorkEffortEventsByPeriodService.class.getName());
     @Value("${business.endpoint.host}")
-    private String service_host;
+    private String serviceHost;
     @Value("${business.endpoint.port}")
-    private String service_port;
+    private String servicePort;
+    @Value("${business.endpoint.protocol}")
+    private String serviceProtocol;
+
+    @Autowired
+    private UserLoginService userLoginService;
 
     public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest) throws Exception {
-        String service_endpoint = "http://"+service_host+":"+service_port+"/webtools/control/SOAPService";
+        return getWorkEffortEventsByPeriod(periodRequest, null);
+    }
+
+
+    public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest, String serviceUrl) throws Exception {
+        return getWorkEffortEventsByPeriod(periodRequest, serviceUrl, null);
+    }
+
+    public WorkEffortEventsByPeriod getWorkEffortEventsByPeriod(GetWorkEffortEventsByPeriodRequest periodRequest, String serviceUrl, String businessServiceUrl) throws Exception {
+
+        StringBuilder sb = new StringBuilder();
+
+        if (StringUtils.isNotEmpty(serviceUrl)) {
+            sb.append(serviceUrl);
+        } else {
+            sb.append(serviceProtocol).append("://").append(serviceHost).append(":").append(servicePort);
+        }
+        sb.append("/webtools/control/SOAPService");
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub stub =
-                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(service_endpoint); //the default implementation should point to the right endpoint
+                new com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub(sb.toString()); //the default implementation should point to the right endpoint
 
         com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod getWorkEffortEventsByPeriod4 =
                 (com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod) getTypeObject(com.kyle.microservices.service.axis2.workEfforts.GetWorkEffortEventsByPeriodStub.GetWorkEffortEventsByPeriod.class);
@@ -127,39 +153,46 @@ public class WorkEffortEventsByPeriodService {
             if (periodRequest.getWorkEffortTypeId() != null) {
 
             }
-            if (periodRequest.getUsername() != null) {
-                GetWorkEffortEventsByPeriodStub.MapEntry loginMapEntry = new GetWorkEffortEventsByPeriodStub.MapEntry();
-
-                GetWorkEffortEventsByPeriodStub.MapKey loginMapKey = new GetWorkEffortEventsByPeriodStub.MapKey();
-                GetWorkEffortEventsByPeriodStub.StdString_type0 loginKey = new GetWorkEffortEventsByPeriodStub.StdString_type0();
-                loginKey.setValue("login.username");
-                loginMapKey.setStdString(loginKey);
-                loginMapEntry.setMapKey(loginMapKey);
-
-                GetWorkEffortEventsByPeriodStub.MapValue loginMapValue = new GetWorkEffortEventsByPeriodStub.MapValue();
-                GetWorkEffortEventsByPeriodStub.StdString_type0 loginValue = new GetWorkEffortEventsByPeriodStub.StdString_type0();
-                loginValue.setValue("admin");
-                loginMapValue.setStdString(loginValue);
-                loginMapEntry.setMapValue(loginMapValue);
-                listEntries.add(loginMapEntry);
-
+            UserLogin userLogin = null;
+            if (StringUtils.isNotEmpty(businessServiceUrl)) {
+                userLogin = userLoginService.getUserLogin(periodRequest.getUserLoginId(), businessServiceUrl);
+            } else {
+                userLogin = userLoginService.getUserLogin(periodRequest.getUserLoginId());
             }
-            if (periodRequest.getPassword() != null) {
+            if (periodRequest.getUserLoginId() != null) {
+                if (userLogin != null) {
 
-                GetWorkEffortEventsByPeriodStub.MapEntry loginPssMapEntry = new GetWorkEffortEventsByPeriodStub.MapEntry();
+                    GetWorkEffortEventsByPeriodStub.MapEntry loginMapEntry = new GetWorkEffortEventsByPeriodStub.MapEntry();
 
-                GetWorkEffortEventsByPeriodStub.MapKey loginPssMapKey = new GetWorkEffortEventsByPeriodStub.MapKey();
-                GetWorkEffortEventsByPeriodStub.StdString_type0 loginPssKey = new GetWorkEffortEventsByPeriodStub.StdString_type0();
-                loginPssKey.setValue("login.password");
-                loginPssMapKey.setStdString(loginPssKey);
-                loginPssMapEntry.setMapKey(loginPssMapKey);
+                    GetWorkEffortEventsByPeriodStub.MapKey loginMapKey = new GetWorkEffortEventsByPeriodStub.MapKey();
+                    GetWorkEffortEventsByPeriodStub.StdString_type0 loginKey = new GetWorkEffortEventsByPeriodStub.StdString_type0();
+                    loginKey.setValue("login.username");
+                    loginMapKey.setStdString(loginKey);
+                    loginMapEntry.setMapKey(loginMapKey);
 
-                GetWorkEffortEventsByPeriodStub.MapValue loginPssMapValue = new GetWorkEffortEventsByPeriodStub.MapValue();
-                GetWorkEffortEventsByPeriodStub.StdString_type0 loginPssValue = new GetWorkEffortEventsByPeriodStub.StdString_type0();
-                loginPssValue.setValue("ofbiz");
-                loginPssMapValue.setStdString(loginPssValue);
-                loginPssMapEntry.setMapValue(loginPssMapValue);
-                listEntries.add(loginPssMapEntry);
+                    GetWorkEffortEventsByPeriodStub.MapValue loginMapValue = new GetWorkEffortEventsByPeriodStub.MapValue();
+                    GetWorkEffortEventsByPeriodStub.StdString_type0 loginValue = new GetWorkEffortEventsByPeriodStub.StdString_type0();
+                    loginValue.setValue(userLogin.getUserLoginId());
+                    loginMapValue.setStdString(loginValue);
+                    loginMapEntry.setMapValue(loginMapValue);
+                    listEntries.add(loginMapEntry);
+
+
+                    GetWorkEffortEventsByPeriodStub.MapEntry loginPssMapEntry = new GetWorkEffortEventsByPeriodStub.MapEntry();
+
+                    GetWorkEffortEventsByPeriodStub.MapKey loginPssMapKey = new GetWorkEffortEventsByPeriodStub.MapKey();
+                    GetWorkEffortEventsByPeriodStub.StdString_type0 loginPssKey = new GetWorkEffortEventsByPeriodStub.StdString_type0();
+                    loginPssKey.setValue("login.password");
+                    loginPssMapKey.setStdString(loginPssKey);
+                    loginPssMapEntry.setMapKey(loginPssMapKey);
+
+                    GetWorkEffortEventsByPeriodStub.MapValue loginPssMapValue = new GetWorkEffortEventsByPeriodStub.MapValue();
+                    GetWorkEffortEventsByPeriodStub.StdString_type0 loginPssValue = new GetWorkEffortEventsByPeriodStub.StdString_type0();
+                    loginPssValue.setValue(userLogin.getPassword());
+                    loginPssMapValue.setStdString(loginPssValue);
+                    loginPssMapEntry.setMapValue(loginPssMapValue);
+                    listEntries.add(loginPssMapEntry);
+                }
             }
         }
 

@@ -19,6 +19,5 @@ public @Data class GetWorkEffortEventsByPeriodRequest {
     private Integer periodType;
     private Boolean filterOutCanceledEvents;
     private List entityExprList;
-    private String username;
-    private String password;
+    private String userLoginId;
 }

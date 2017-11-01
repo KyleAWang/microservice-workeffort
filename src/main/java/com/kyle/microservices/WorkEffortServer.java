@@ -1,6 +1,8 @@
 package com.kyle.microservices;
 
+import com.kyle.microservices.beans.UserLogin;
 import com.kyle.microservices.controllers.WorkEffortController;
+import com.kyle.microservices.service.UserLoginService;
 import com.kyle.microservices.service.WorkEffortEventsByPeriodService;
 import com.kyle.microservices.service.WorkEffortService;
 import org.springframework.boot.SpringApplication;
@@ -36,5 +38,7 @@ public class WorkEffortServer {
         return new WorkEffortController();
     }
 
+    @Bean
+    public UserLoginService userLoginService() { return new UserLoginService(); }
 
 }
