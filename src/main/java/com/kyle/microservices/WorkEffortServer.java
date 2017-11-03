@@ -5,6 +5,9 @@ import com.kyle.microservices.controllers.WorkEffortController;
 import com.kyle.microservices.service.UserLoginService;
 import com.kyle.microservices.service.WorkEffortEventsByPeriodService;
 import com.kyle.microservices.service.WorkEffortService;
+import com.kyle.microservices.service.impl.UserLoginServiceImpl;
+import com.kyle.microservices.service.impl.WorkEffortEventsByPeriodServiceImpl;
+import com.kyle.microservices.service.impl.WorkEffortServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,10 +31,10 @@ public class WorkEffortServer {
 
     @Bean
     public WorkEffortService workEffortService() {
-        return new WorkEffortService();
+        return new WorkEffortServiceImpl();
     }
     @Bean
-    public WorkEffortEventsByPeriodService workEffortEventsByPeriodService() { return new WorkEffortEventsByPeriodService(); }
+    public WorkEffortEventsByPeriodService workEffortEventsByPeriodService() { return new WorkEffortEventsByPeriodServiceImpl(); }
 
     @Bean
     public WorkEffortController workEffortController() {
@@ -39,6 +42,6 @@ public class WorkEffortServer {
     }
 
     @Bean
-    public UserLoginService userLoginService() { return new UserLoginService(); }
+    public UserLoginService userLoginService() { return new UserLoginServiceImpl(); }
 
 }

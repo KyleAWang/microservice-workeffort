@@ -28,20 +28,18 @@ public class WorkEffortEventsByPeriodServiceTest {
 
     private String serviceEndpoint = "http://192.168.20.9:8080";
     private String businessServiceEndpoint = "http://localhost:2223";
-    
+
 //    {
 //        "calendarType": "CAL_PERSONAL",
 //            "numPeriods":35,
 //            "password": "ofbiz",
 //            "periodType": 5,
 //            "start": "2017-09-23",
-//            "username": "admin",
-//            "workEffortTypeId": "string"
+//            "userLoginId": "admin"
 //    }
     @Test
     public void getWorkEffortEventsByPeriod() throws Exception {
         GetWorkEffortEventsByPeriodRequest request = new GetWorkEffortEventsByPeriodRequest();
-        request.setUserLoginId("admin");
         request.setCalendarType("CAL_PERSONAL");
         request.setNumPeriods(35);
         request.setPeriodType(5);

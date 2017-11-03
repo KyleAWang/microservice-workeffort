@@ -43,6 +43,8 @@ public class WorkEffortController {
     })
     @RequestMapping(value = "/getworkefforts", method = RequestMethod.POST, consumes = "application/json")
     public ResponseEntity<String> getWorkEfforts(@RequestBody(required = false) SearchOptionsRequest searchOptionsRequest) {
+        final String methodName = "getWorkEffortEventsByPeriod";
+        logger.info(methodName + " starts...");
         WorkEfforts workEfforts = new WorkEfforts();
         try {
             workEfforts.setWorkEfforts(workEffortService.getWorkEfforts(searchOptionsRequest));
@@ -59,6 +61,8 @@ public class WorkEffortController {
             e.printStackTrace();
         }
 
+        logger.info(methodName + " ends...");
+
         return new ResponseEntity<String>(jsonString, HttpStatus.OK);
     }
 
@@ -69,6 +73,8 @@ public class WorkEffortController {
     })
     @RequestMapping(value = "/getWorkEffortEventsByPeriod", method = RequestMethod.POST, consumes = "application/json")
     public ResponseEntity<String> getWorkEffortEventsByPeriod(@RequestBody(required = true) GetWorkEffortEventsByPeriodRequest getWorkEffortEventsByPeriodRequest) {
+        final String methodName = "getWorkEffortEventsByPeriod";
+        logger.info(methodName + " starts...");
         String jsonString = "";
         WorkEffortEventsByPeriod workEffortEventsByPeriod = null;
         try {
@@ -85,6 +91,8 @@ public class WorkEffortController {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+
+        logger.info(methodName + " ends...");
 
         return new ResponseEntity<String>(jsonString, HttpStatus.OK);
     }

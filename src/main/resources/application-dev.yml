@@ -8,5 +8,6 @@ business:
 ms:
   user:
     endpoint:
+      protocol: http
       host: localhost
       port: 2223

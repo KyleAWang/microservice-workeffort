@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 
 public abstract class AbstractBusinessService {
     @Value("${business.endpoint.host}")
-    private String service_host;
+    protected  String serviceHost;
     @Value("${business.endpoint.port}")
-    private String service_port;
-
-    protected String service_endpoint = "http://"+service_host+":"+service_port+"/webtools/control/SOAPService";
+    protected  String servicePort;
+    @Value("${business.endpoint.protocol}")
+    protected  String serviceProtocol;
 }
