@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.xml.namespace.QName;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -21,7 +22,6 @@ import java.util.logging.Logger;
 @Service
 public class WorkEffortServiceImpl extends AbstractBusinessService implements WorkEffortService{
     private final Logger logger = Logger.getLogger(WorkEffortServiceImpl.class.getName());
-    private static final QName SERVICE_NAME = new QName("http://ofbiz.apache.org/service/", "getWorkEfforts");
     private static final String WORK_EFFORT_ID = "workEffortId";
 
     @Autowired
@@ -29,7 +29,8 @@ public class WorkEffortServiceImpl extends AbstractBusinessService implements Wo
 
     public List<WorkEffort> getWorkEfforts(SearchOptionsRequest searchOptionsRequest) throws Exception {
         final String methodName = "getWorkEfforts";
-        logger.info(methodName + " starts...");
+//        logger.info(methodName + " starts...");
+        logger.info(() -> methodName + " starts...");
 
         String service_endpoint = serviceProtocol + "://" + serviceHost + ":" + servicePort + "/webtools/control/SOAPService";
         logger.info("service endpoint:" + service_endpoint);

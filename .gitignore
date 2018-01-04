@@ -49,6 +49,9 @@ hs_err_pid*
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
 
+# sonarlint
+.idea/sonarlint/
+
 ## File-based project format:
 *.iws
 

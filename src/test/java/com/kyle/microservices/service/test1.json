@@ -1,0 +1,1733 @@
+{
+  "maxConcurrentEntries": 2,
+  "periods": [
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": true,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": true,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503403200918,
+      "end": 1503489600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503489600918,
+      "end": 1503576000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503576000918,
+      "end": 1503662400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503662400918,
+      "end": 1503748800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503748800918,
+      "end": 1503835200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503835200918,
+      "end": 1503921600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1503921600918,
+      "end": 1504008000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504008000918,
+      "end": 1504094400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504094400918,
+      "end": 1504180800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504180800918,
+      "end": 1504267200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504267200918,
+      "end": 1504353600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504353600918,
+      "end": 1504440000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          },
+          {
+            "startOfPeriod": true,
+            "workEffort": {
+              "workEffortId": "STAFF_MTG",
+              "lastStatusUpdate": "2008-01-01 00:00:00.0",
+              "description": "Staff Meeting",
+              "estimatedStartDate": "2017-09-04 10:00:00.918",
+              "estimatedCompletionDate": "2017-09-04 11:00:00.918",
+              "estimatedMilliSeconds": 3600000.0
+            },
+            "periodSpan": 1,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504440000918,
+      "end": 1504526400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504526400918,
+      "end": 1504612800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504612800918,
+      "end": 1504699200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504699200918,
+      "end": 1504785600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504785600918,
+      "end": 1504872000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504872000918,
+      "end": 1504958400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1504958400918,
+      "end": 1505044800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505044800918,
+      "end": 1505131200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505131200918,
+      "end": 1505217600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505217600918,
+      "end": 1505304000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505304000918,
+      "end": 1505390400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505390400918,
+      "end": 1505476800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505476800918,
+      "end": 1505563200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505563200918,
+      "end": 1505649600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505649600918,
+      "end": 1505736000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505736000918,
+      "end": 1505822400917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505822400918,
+      "end": 1505908800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505908800918,
+      "end": 1505995200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1505995200918,
+      "end": 1506081600917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1506081600918,
+      "end": 1506168000917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1506168000918,
+      "end": 1506250800917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1506250800918,
+      "end": 1506337200917
+    },
+    {
+      "calendarEntriesByDateRange": {
+        "key": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870",
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "calendarEntries": {
+        "calendarEntries": [
+          {
+            "startOfPeriod": false,
+            "workEffort": {
+              "workEffortId": "10010",
+              "lastStatusUpdate": "2017-08-14 00:33:17.954",
+              "description": "Work Effort Application",
+              "estimatedStartDate": "2017-08-14 00:00:00.0",
+              "estimatedCompletionDate": "2017-10-01 00:00:00.0",
+              "actualStartDate": "2017-08-14 00:00:00.0",
+              "estimatedMilliSeconds": 3.6288E9,
+              "createdDate": "2017-08-14 00:33:17.954",
+              "createdByUserLogin": "admin",
+              "lastModifiedDate": "2017-08-14 00:35:37.189",
+              "lastModifiedByUserLogin": "admin"
+            },
+            "periodSpan": 35,
+            "calEntryRange": "aced0005737200246f72672e6170616368652e6f6662697a2e626173652e7574696c2e4461746552616e6765749e5544e19e631e0200007870"
+          }
+        ]
+      },
+      "start": 1506337200918,
+      "end": 1506423600917
+    }
+  ]
+}
